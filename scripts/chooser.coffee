@@ -1,6 +1,6 @@
 module.exports = (robot) ->
   robot.hear /would\s([^\s]+)\s(.*?)\sor\s(.*)$/i, (msg) ->
-	  matches = /would\s([^\s]+)\s(.*?)\sor\s(.*)$/i
+	  matches = /would\s([^\s]+)\s(.*?)\sor\s(.*?)\?*$/i
 	  rsp = msg.message.text.match(matches)
 	  if rsp
 	      guess = Math.random()
