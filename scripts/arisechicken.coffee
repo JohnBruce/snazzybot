@@ -1,6 +1,7 @@
 module.exports = (robot) ->
   robot.hear /(raise chicken)/i, (msg) ->
 	  msg.reply "https://i.imgur.com/JR5IJav.gif"
+	  msg.reply "Arise Chicken!"
 	  setTimeout(() ->
 	  	min = 0
 	  	max = 3
